@@ -17,7 +17,7 @@ operations.
 - **new_tcp_message()** - a new TCP message is being received from a TCP client. If it is a subsribe command, it adds the given topic to the subscriber's topic list accordingly. If it is an unsubscribe command, it removes the topic from the subscriber's topic list.
 
 #### Usage
-./server SERVER_PORT
+./server [SERVER_PORT]
 
 
 ### Subscriber: 
@@ -28,7 +28,7 @@ TCP client. Initializes TCP passive socket and the server address. It connects t
 - **recv_package()** - receive the package from an UDP client (via server). It computes the message and it prints the outcome accordingly(INT, SHORT_REAL, REAL, STRING).
    
 #### Usage
-./subscriber NAME SERVER_IP SERVER_PORT
+./subscriber NAME [SERVER_IP] [SERVER_PORT]
 
 
 ### Stream:
@@ -38,7 +38,7 @@ UDP client. Initializes UDP passive socket and the server address. A true loop m
 - **make_udp_message()** - makes the UDP message with the specified UDP format;
     
 #### Usage
-./stream SERVER_IP SERVER_PORT
+./stream [SERVER_IP] [SERVER_PORT]
 
 
 ## Other
