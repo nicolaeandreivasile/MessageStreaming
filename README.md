@@ -28,7 +28,7 @@ TCP client. Initializes TCP passive socket and the server address. It connects t
 - **recv_package()** - receive the package from an UDP client (via server). It computes the message and it prints the outcome accordingly(INT, SHORT_REAL, REAL, STRING).
    
 #### Usage
-./subscriber NAME [SERVER_IP] [SERVER_PORT]
+./subscriber [NAME] [SERVER_IP] [SERVER_PORT]
 
 
 ### Stream:
